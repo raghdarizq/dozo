@@ -1,21 +1,147 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  /* color: white; */
+  /* overflow-x: hidden; */
+  font-family: 'Bahij thesansarabic', sans-serif;
 }
-.container-fluid{
+
+.container-fluid {
   padding: 0;
 }
-.header{
-  height: 100vh;
+
+.header {
+  height: 80vh;
   min-height: 400px;
   background-size: cover;
   background-image: url("../images/eBG.png");
+  position: relative;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/effects.png");
+  opacity: 0.5;
+}
+
+.header:hover:before {
+  opacity: 0.8;
+  transform: translate(-50%, -50%) scale(1.1) rotate(15deg);
+}
+
+.header-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.header:hover .header-img {
+  transform: translate(-50%, -55%);
+
+}
+
+.who {
+  color: #18427c;
+  font-weight: 700;
+}
+
+.whoImg {
+  /* margin-bottom: 50px; */
+  font-family: 'Bahij thesansarabic plain', sans-serif;
+  color: #868686;
+  font-size: 25px;
+  text-align: center;
+}
+
+.Carousel {
+  outline: #18427c solid 5px;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.line {
+  color: #6ed1aa;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.card {
+  border-radius: 10px;
+  border: #18427b solid 2px;
+}
+
+.card-title {
+  font-family: 'Bahij thesansarabic plain', sans-serif;
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 10px;
+}
+
+.imgworlk {
+  width: 37rem;
+  margin-top: -3rem;
+  margin-left: -22rem;
+}
+
+.imgworlk2 {
+  width: 37rem;
+  margin-top: 1rem;
+  margin-left: -27rem;
+}
+
+.imgworlkMed {
+  margin-top: 3rem;
+  margin-left: -10rem;
+  margin-bottom: 1px;
+}
+
+.cardShow {
+  border: 0;
+  box-shadow: 1px 2px 12px 0 #234078;
+    width: 300px;
+  height: 300px;
+}
+.cardShow .card-title {
+  height: 40px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.cardShowImg {
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.review {
+  height: 80vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url("../images/b-bg2.png");
+}
+.reviews{
+  height: 60vh;
+  background-color: aliceblue;
+  border-radius: 20px;
 }
 /*media Query*/
-@media only screen and (max-width:600px){
-  .header{
-      background-position: 20% 33%;
+@media only screen and (max-width:600px) {
+  .header {
+    background-position: 20% 33%;
   }
 }

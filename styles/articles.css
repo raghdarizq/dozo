@@ -1,0 +1,47 @@
+.artical {
+  height: 50vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url("../images/slider-BG.png");
+}
+
+.articalName {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.articalCard {
+  background-image: linear-gradient(55deg, #7e81bc 1%, #416399);
+  border: 0 #416399;
+  color: white;
+}
+
+.card-title {
+  margin: 0px 0px 35px;
+  padding: 0px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.articalblock {
+  display: inline-block;
+  width: 540px;
+  height: 480px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 10px;
+  clear: none;
+  border: 2px solid #416399;
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: left;
+  overflow: hidden;
+}
+.articalblock img {
+  width: 100%;
+  height: 225px;
+  /* margin-bottom: 5px; */
+  border-radius: 16px;
+}
