@@ -1,0 +1,29 @@
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">الصفحةالرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> عروضنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> خدماتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> أعمالنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> المدونة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> اتصل بنا </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
