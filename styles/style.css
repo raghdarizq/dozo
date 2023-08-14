@@ -199,18 +199,57 @@
   font-weight: 700;
 }
 
+.showMore {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  padding-top: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #3898ec;
+  border-style: none;
+}
 
 .review {
   height: 80vh;
   min-height: 400px;
   background-size: cover;
   background-image: url("../images/b-bg2.png");
+  padding: 70px 0;
+  text-align: center;
+}
+
+.center {
+  padding: 70px 0;
+  text-align: center;
 }
 
 .reviews {
   height: 60vh;
-  background-color: aliceblue;
+  width: 60%;
+  background-color: #fff;
   border-radius: 20px;
+  margin: 0 auto;
+
+}
+
+.carousel-item img {
+  height: 170px;
+  object-fit: cover;
+  width: 170px;
+  border: #234078 solid 5px;
+}
+
+.reviewCon {
+  display: block;
+  overflow: hidden;
+  padding: 0 110px;
+  color: #6f706f;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /*media Query*/
