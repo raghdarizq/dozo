@@ -32,12 +32,12 @@
   margin-bottom: 30px;
   margin-left: 15px;
   padding: 10px;
-  clear: none;
   border: 2px solid #416399;
   border-radius: 16px;
   background-color: #fff;
   text-align: left;
   overflow: hidden;
+  text-align: right;
 }
 .articalblock img {
   width: 100%;

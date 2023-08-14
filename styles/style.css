@@ -1,10 +1,20 @@
+@font-face {
+  font-family: myFonBold;
+  src: url('../fonts/Bahij_TheSansArabic-Bold.ttf');
+}
+@font-face {
+  font-family: myFontLight;
+  src: url('../fonts/Bahij_TheSansArabic-SemiLight.ttf');
+}
+@font-face {
+  font-family: myFontPlain;
+  src: url('../fonts/Bahij_TheSansArabic-Plain.ttf');
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* color: white; */
-  /* overflow-x: hidden; */
-  font-family: 'Bahij thesansarabic', sans-serif;
+  font-family: myFontPlain, sans-serif;
 }
 
 .container-fluid {
@@ -12,7 +22,7 @@
 }
 
 .header {
-  height: 80vh;
+  height: 90vh;
   min-height: 400px;
   background-size: cover;
   background-image: url("../images/eBG.png");
@@ -47,6 +57,29 @@
   transform: translate(-50%, -55%);
 
 }
+.buttons button {
+  padding: 10px;
+  width: 12rem;
+}
+.buttons button a{
+  color: white;
+  text-decoration: none;
+}
+.navbar-nav li.nav-item {
+  position: relative;
+  transition: right 0.5s ease-in-out; 
+  right: 100%;
+}
+
+.navbar-nav.active li.nav-item {
+  right: 0; 
+}
+
+.nav-link:hover{
+  /* background-color: #000000; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
 
 .who {
   color: #18427c;
@@ -60,7 +93,25 @@
   font-size: 25px;
   text-align: center;
 }
+.section-transition {
+  opacity: 0; 
+  transform: translateX(50px); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
+.section-transition.active {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.section-transition img {
+  transform: translateX(-50px); 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.section-transition.active img {
+  transform: translateX(0); 
+}
 .Carousel {
   outline: #18427c solid 5px;
 }
@@ -75,6 +126,9 @@
   color: #6ed1aa;
   font-size: larger;
   font-weight: bolder;
+}
+.cardService {
+  border-radius: 20px;
 }
 
 .card {
@@ -143,5 +197,20 @@
 @media only screen and (max-width:600px) {
   .header {
     background-position: 20% 33%;
+  }
+
+}
+@media (max-width: 768px) { 
+  .header {
+    height: 150vh;
+  }
+  .welcom{
+    text-align: center;
+    width: 100%;
+  }
+  nav .navbar-collapse  {
+    /* background-image: linear-gradient(55deg, #7e81bc 1%, #416399); */
+    min-width: 100%;
+    /* تنسيقات إضافية للنافبار عند شاشات متوسطة الحجم */
   }
 }
