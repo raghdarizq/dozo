@@ -5,6 +5,11 @@
   background-image: url("../images/slider-BG.png");
 }
 
+.Articletitle {
+  color: #416399;
+  text-decoration: none;
+}
+
 .articalName {
   margin-top: auto;
   margin-bottom: auto;
@@ -14,6 +19,31 @@
   background-image: linear-gradient(55deg, #7e81bc 1%, #416399);
   border: 0 #416399;
   color: white;
+  width: 350px;
+  height: 250px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: linear-gradient(55deg, #656bda 1%, #416399);
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  position: relative;
+  right: 5rem;
+}
+
+.carousel-control-next-icon {
+  position: relative;
+  left: 8rem;
+}
+
+.who {
+  color: #18427c;
+  font-weight: 700;
 }
 
 .card-title {
@@ -24,6 +54,7 @@
   font-weight: 700;
   text-align: center;
 }
+
 .articalblock {
   display: inline-block;
   width: 540px;
@@ -39,9 +70,49 @@
   overflow: hidden;
   text-align: right;
 }
+
 .articalblock img {
   width: 100%;
   height: 225px;
-  /* margin-bottom: 5px; */
   border-radius: 16px;
+}
+
+.readMore {
+  text-align: center;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.readMore2 {
+  background-color: #18427c;
+  color: white;
+  margin-bottom: 5px;
+
+}
+
+@media (max-width: 767px) {
+  .articalblock {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    height: 75vh;
+    margin-top: 5px;
+
+  }
+
+  .allarticals {
+    display: none;
+  }
+
+  .readMore2 {
+
+    margin-top: 5px;
+  }
 }

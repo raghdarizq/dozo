@@ -18,6 +18,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: myFontPlain, sans-serif;
+  /* cursor: pointer !important; */
+}
+
+.custom-cursor {
+  cursor: pointer !important;
 }
 
 .container-fluid {
@@ -59,6 +64,14 @@
 .header:hover .header-img {
   transform: translate(-50%, -55%);
 
+}
+
+.nav-item {
+  cursor: pointer !important;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }
 
 .buttons button {
@@ -155,9 +168,9 @@
 }
 
 .imgworlk {
-  width: 37rem;
-  margin-top: -3rem;
-  margin-left: -22rem;
+  width: 18rem;
+  margin-top: -1rem;
+  margin-left: -7rem;
 }
 
 .imgworlk2 {
@@ -243,6 +256,32 @@
   border: #234078 solid 5px;
 }
 
+.cardService {
+  width: 170px;
+  height: 314px;
+  margin: 0 auto;
+  border: 2px solid #18427b;
+  transition: transform 0.3s ease;
+  font-family: myFontLight;
+  font-size: 10px;
+}
+
+.cardService:hover {
+  transform: translateX(10px);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.card-service-text {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.imgService {
+  width: 80%;
+  height: 30%;
+}
+
 .reviewCon {
   display: block;
   overflow: hidden;
@@ -252,7 +291,7 @@
   font-weight: 700;
 }
 
-.counter{
+.counter {
   background-image: url("../images/slider-BG.png");
   background-size: cover;
   min-height: 300px;
@@ -261,7 +300,7 @@
   background-attachment: fixed, scroll;
 }
 
-.counter::before{
+.counter::before {
   content: "";
   position: absolute;
   top: 0;
@@ -271,18 +310,21 @@
   /* background-image: url("../images/effects.png"); */
   opacity: 0.5;
 }
-.count{
+
+.count {
   padding-bottom: 15px;
   color: #fff;
   font-size: 25px;
   font-weight: 700;
 }
-.countDesc{
+
+.countDesc {
   font-family: myFontLight;
   color: #fff;
   font-size: 20px;
   line-height: 35px;
 }
+
 .articalCard {
   background-image: linear-gradient(55deg, #7e81bc 1%, #416399);
   border: 0 #416399;
@@ -297,7 +339,8 @@
   font-weight: 700;
   text-align: center;
 }
-footer{
+
+footer {
   min-height: 100px;
   background-color: #000;
   padding: 70px 0;
@@ -306,6 +349,7 @@ footer{
   font-size: 30px;
 
 }
+
 /*media Query*/
 @media only screen and (max-width:600px) {
   .header {
