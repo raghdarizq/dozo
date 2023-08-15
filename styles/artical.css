@@ -91,3 +91,12 @@ textarea.input {
   font-weight: 300;
   border: #416399;
 }
+@media (max-width: 767px) {
+  .box-img {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
