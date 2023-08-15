@@ -31,3 +31,4 @@ countElements.forEach((element, index) => {
     }
   }, 50);
 });
+

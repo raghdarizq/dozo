@@ -95,7 +95,6 @@
 }
 
 .nav-link:hover {
-  /* background-color: #000000; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -106,7 +105,6 @@
 }
 
 .whoImg {
-  /* margin-bottom: 50px; */
   font-family: 'Bahij thesansarabic plain', sans-serif;
   color: #868686;
   font-size: 25px;
