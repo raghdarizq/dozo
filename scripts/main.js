@@ -17,3 +17,17 @@ window.addEventListener('scroll', function () {
     section.classList.add('active');
   }
 });
+const counts = [963243, 23, 31];
+const countElements = document.querySelectorAll('.counter h6 span');
+
+countElements.forEach((element, index) => {
+  let currentCount = 0;
+  const targetCount = counts[index];
+  const interval = setInterval(() => {
+    currentCount += Math.ceil(targetCount / 50);
+    element.textContent = currentCount.toLocaleString();
+    if (currentCount >= targetCount) {
+      clearInterval(interval);
+    }
+  }, 50);
+});

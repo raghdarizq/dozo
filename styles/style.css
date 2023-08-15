@@ -252,6 +252,60 @@
   font-weight: 700;
 }
 
+.counter{
+  background-image: url("../images/slider-BG.png");
+  background-size: cover;
+  min-height: 300px;
+  padding: 70px 0;
+  text-align: center;
+  background-attachment: fixed, scroll;
+}
+
+.counter::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url("../images/effects.png"); */
+  opacity: 0.5;
+}
+.count{
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.countDesc{
+  font-family: myFontLight;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+}
+.articalCard {
+  background-image: linear-gradient(55deg, #7e81bc 1%, #416399);
+  border: 0 #416399;
+  color: white;
+}
+
+.titleblog {
+  margin: 0px 0px 35px;
+  padding: 0px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+footer{
+  min-height: 100px;
+  background-color: #000;
+  padding: 70px 0;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
 /*media Query*/
 @media only screen and (max-width:600px) {
   .header {
