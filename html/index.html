@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bahij+TheSansArabic:wght@400;700&display=swap">
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsiv.css">
   <link rel="shortcut icon" href="../images/avatar.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/7ecc9fa582.js" crossorigin="anonymous"></script>
   <title>دوزو لخدمات الويب والتطبيقات | DOZO FOR WEB AND APPS SERVICES</title>
@@ -18,35 +19,36 @@
   <div class="container-fluid header">
     <div class="container px-3 px-sm-5">
       <nav class="navbar navbar-expand-md ">
-        <div class="container-fluid px-5">
-          <a class="navbar-brand ms-5 " href="#">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
             <img src="../images/logo.png" alt="شعارنا" width="100px" height="70px" class="mt-3">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse px-5" id="navbarCollapse">
             <ul class="navbar-nav  me-3 mt-5">
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white custom-cursor" href="#">الصفحة الرئيسية</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="#who-dozo">من نحن</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="#offer">عروضنا</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="#services">خدماتنا</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="#work">أعمالنا</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="./articles.html">المدونة</a>
               </li>
-              <li class="nav-item ms-4 ">
+              <li class="nav-item">
                 <a class="nav-link text-white" href="#contact">اتصل بنا</a>
               </li>
             </ul>
@@ -56,12 +58,12 @@
       <!--Hero sec-->
       <div class="container mt-4 mt-sm-5">
         <div class="row g-0 ms-sm-5">
-          <div class="col-lg-6 col-sm-12 order-md-2">
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-2">
             <img src="../images/header-img.png" alt="header-img" class="img-fluid">
           </div>
-          <div class="col-lg-6 col-sm-12 order-md-1 mt-4 mt-sm-0 welcom">
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-1 mt-4 mt-sm-0 welcom">
             <h1 class="text-white ">مرحبا بكم في موقع دوزو</h1>
-            <p class="mt-4 text-white ms-4 welcomWorld" style="font-size: 17px;">
+            <p class="mt-4 text-white ms-4 welcomWorld" style="font-size: 0.9rem;">
               نحن من سلالة تقنية مختلفة … بالتأكيد ، يمكنك تصميم وإنشاء
               تطبيق
               وموقع ويب يفي بالغرض! ، ولكننا سنكون أول من يخبرك بأن
@@ -188,103 +190,109 @@
   <section class="container mt-5" id="services">
     <div class="row text-center align-items-center mt-5">
       <div class="col-md-12  mt-5 ">
-        <h2 class=" who" style="font-size: 45px;">الخدمات التي يقدمها فريقنا </h2>
+        <h2 class="who h2" style="font-size: 45px;">الخدمات التي يقدمها فريقنا </h2>
         <span class="line">_______</span>
         <p class="text-muted" style="font-size: 17px;">دعنا نوفر لك بعض الوقت ... نحن نقدم لك كل ما تريد … ! </p>
       </div>
       <!--card-->
       <div class="col-md-12">
         <div class="row justify-content-center">
-          <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="container mt-3">
               <div class="card  align-items-center cardService">
-                <img class="card-img-top  mt-3 imgService" src="../images/dwrat.png" alt="Card image"/>
+                <img class="card-img-top  mt-3 imgService" src="../images/dwrat.png" alt="Card image" />
                 <div class="card-body">
                   <p class="card-title">دورات برمجية </p>
-                  <p class="card-text card-service-text">دائما ثق أن فريق الدعم الفني في دوزو مستعد لتقديم أفضل الخدمات وأسرعها لمساعدتك.
+                  <p class="card-text card-service-text">دائما ثق أن فريق الدعم الفني في دوزو مستعد لتقديم أفضل الخدمات
+                    وأسرعها لمساعدتك.
                   </p>
-                  <a href="#" class="btn btn-primary text-white">اطلب من هنا</a>
+                  <a href="#" class="btn text-white order">اطلب من هنا</a>
                 </div>
               </div>
             </div>
 
           </div>
-          <div class="col-lg-2 col-md-6  col-sm-6">
+          <div class="col-xl-2 col-lg-3 col-md-4  col-sm-6">
             <div class="container mt-3">
               <div class="card  align-items-center cardService">
                 <img class="card-img-top mt-3 imgService" src="../images/web.png" alt="Card image" ">
-                <div class="card-body">
-                  <h4 class="card-title">بناء وتطوير المواقع </h4>
-                  <p class="card-service-text">يعمل فريق دوزو على برمجة وتصميم المواقع وفق التقنيات والأساليب الحديثة وبأفكار
-                    متجددة. </p>
-                  <a href="#" class="btn btn-primary">اطلب من هنا</a>
-                </div>
+                <div class=" card-body">
+                <h4 class="card-title">بناء وتطوير المواقع </h4>
+                <p class="card-service-text">يعمل فريق دوزو على برمجة وتصميم المواقع وفق التقنيات والأساليب الحديثة
+                  وبأفكار
+                  متجددة. </p>
+                <a href="#" class="btn order text-white">اطلب من هنا</a>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-2 col-md-6  col-sm-6">
-            <div class="container mt-3">
-              <div class="card  align-items-center cardService">
-                <img class="card-img-top mt-3 imgService " src="../images/grafec.png" alt="Card image" >
-                <div class="card-body">
-                  <h4 class="card-title"> جرافيك ديزاين </h4>
-                  <p class="card-service-text">دنقدم لك أفضل التصاميم الإحترافية التي تلبي احتياجاتك من خلال فريق من المصممين
-                    المتميزين.</p>
-                  <a href="#" class="btn btn-primary">اطلب من هنا</a>
-                </div>
+
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4  col-sm-6">
+          <div class="container mt-3">
+            <div class="card  align-items-center cardService">
+              <img class="card-img-top mt-3 imgService " src="../images/grafec.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title"> جرافيك ديزاين </h4>
+                <p class="card-service-text">دنقدم لك أفضل التصاميم الإحترافية التي تلبي احتياجاتك من خلال فريق من
+                  المصممين
+                  المتميزين.</p>
+                <a href="#" class="btn order text-white">اطلب من هنا</a>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-2 col-md-6  col-sm-6">
-            <div class="container mt-3">
-              <div class="card  align-items-center cardService">
-                <img class="card-img-top mt-3  imgService" src="../images/apps.png" alt="Card image" >
-                <div class="card-body">
-                  <h4 class="card-title"> برمجة وتصميم التطبيقات </h4>
-                  <p class="card-service-text">في مجال تطبيقات الهواتف الذكية يتميز فريق دوزو بمواكبته للغات البرمجة القوية
-                    والرائدة.</p>
-                  <a href="#" class="btn btn-primary">اطلب من هنا</a>
-                </div>
+
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4  col-sm-6">
+          <div class="container mt-3">
+            <div class="card  align-items-center cardService">
+              <img class="card-img-top mt-3  imgService" src="../images/apps.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title"> برمجة وتصميم التطبيقات </h4>
+                <p class="card-service-text">في مجال تطبيقات الهواتف الذكية يتميز فريق دوزو بمواكبته للغات البرمجة
+                  القوية
+                  والرائدة.</p>
+                <a href="#" class="btn order text-white">اطلب من هنا</a>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-2 col-md-6  col-sm-6">
-            <div class="container mt-3">
-              <div class="card  align-items-center cardService">
-                <img class="card-img-top mt-3 imgService " src="../images/storak.png" alt="Card image" >
-                <div class="card-body">
-                  <h4 class="card-title"> متجرك الالكتروني</h4>
-                  <p class="card-service-text">قد تحلم يوماً أن يكون لديك متجرك الإلكتروني الناشئ لبدء مشروع أحلامك ، نحن في
-                    دوزو نقدمه لك.</p>
-                  <a href="#" class="btn btn-primary">اطلب من هنا</a>
-                </div>
+
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4  col-sm-6">
+          <div class="container mt-3">
+            <div class="card  align-items-center cardService">
+              <img class="card-img-top mt-3 imgService " src="../images/storak.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title"> متجرك الالكتروني</h4>
+                <p class="card-service-text">قد تحلم يوماً أن يكون لديك متجرك الإلكتروني الناشئ لبدء مشروع أحلامك ، نحن
+                  في
+                  دوزو نقدمه لك.</p>
+                <a href="#" class="btn order text-white">اطلب من هنا</a>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-2 col-md-6  col-sm-6">
-            <div class="container mt-3">
-              <div class="card  align-items-center cardService">
-                <img class="card-img-top imgService  mt-3" src="../images/support.png" alt="Card image" >
-                <div class="card-body">
-                  <p class="card-title">دعم فني </p>
-                  <p class="card-service-text"> دائما ثق أن فريق الدعم الفني في دوزو مستعد لتقديم أفضل الخدمات وأسرعها لمساعدتك.
-                  </p>
-                  <a href="#" class="btn btn-primary text-white">اطلب من هنا</a>
-                </div>
+
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4  col-sm-6">
+          <div class="container mt-3">
+            <div class="card  align-items-center cardService">
+              <img class="card-img-top imgService  mt-3" src="../images/support.png" alt="Card image">
+              <div class="card-body">
+                <p class="card-title">دعم فني </p>
+                <p class="card-service-text"> دائما ثق أن فريق الدعم الفني في دوزو مستعد لتقديم أفضل الخدمات وأسرعها
+                  لمساعدتك.
+                </p>
+                <a href="#" class="btn order text-white">اطلب من هنا</a>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
+    </div>
 
     </div>
   </section>
-  <section class="container mt-5 HowWoke" >
+  <section class="container2 mt-5 HowWoke">
     <div class="row g-0 text-center align-items-center">
       <div class="col-md-12">
         <h1 class=" who">كيف نحضر موقعك </h1>
@@ -292,13 +300,13 @@
       </div>
       <div class="col-md-12 mt-5">
         <div class="row  g-0 justify-content-center">
-          <div class="col-md-6  text-center">
-            <picture>
+          <div class="col-xl-6 col-md-6 text-center">
+            <picture class="per">
               <source media="(max-width: 768px)" srcset="../images/01.png " class="justify-content-center">
               <img src="../images/KYF1.png" alt="KYF2" class="mt-2" id="image2">
             </picture>
           </div>
-          <div class="col-md-6  text-center ">
+          <div class="col-xl-6 col-md-6 text-center ">
             <h5 class="workeHeader mt-5">نحلّـل فكرتك داخل مطبخنا و نـحـضّـر المكوّنــات</h5>
             <p class="textHeader mt-3">يتم استقبال أفكارك بكل حب من خلال فريق دوزو ويتم تحليل مكوناتها فـي مـطـابـخـنا
               البرمجية من قبل أفــضـل
@@ -306,15 +314,15 @@
             </p>
           </div>
         </div>
-        <div class="row g-0 mt-1"> 
-          <div class="col-md-6  text-center order-sm-2">
-            <picture>
-              <source media="(max-width: 768px)" srcset="../images/02.png"  class="justify-content-center">
+        <div class="row g-0 mt-1">
+          <div class="col-xl-6 col-md-6  text-center order-sm-2">
+            <picture class="per">
+              <source media="(max-width: 768px)" srcset="../images/02.png" class="justify-content-center">
               <img src="../images/KYF2.png" alt="KYF2" class="mt-2" id="image2">
             </picture>
           </div>
-          <div class="col-md-6   text-center order-sm-1">
-            <h4 class="workeHeader mt-5"> يطهوها شيفنا المحترف على نار هادئة</h4>
+          <div class="col-xl-6 col-md-6   text-center order-sm-1">
+            <h4 class="workeHeader mt-5 text-center"> يطهوها شيفنا المحترف على نار هادئة</h4>
             <p class="textHeader mt-3">
               في هذه المرحلة يبدأ طهاتنا المحترفون بتجهيز وجبتك الشهية من الأكواد البرمجية على نار هادئة ، ويهتم الطهاة
               بمراقبة أدق التفاصيل ابتداء من المظهر العام وانتهاء بتقديم وجبة برمجية سليمة وآمنة
@@ -322,14 +330,14 @@
           </div>
         </div>
         <div class="row g-0">
-          <div class="col-md-6  text-center">
-            <picture>
-              <source media="(max-width: 768px)" srcset="../images/03.png"  class="justify-content-center">
+          <div class="col-xl-6 col-md-6  text-center">
+            <picture class="per">
+              <source media="(max-width: 768px)" srcset="../images/03.png" class="justify-content-center">
               <img src="../images/KYF3.png" alt="KYF2" class="mt-2" id="image2">
             </picture>
           </div>
-          <div class="col-md-6">
-            <h4 class="workeHeader mt-5">
+          <div class="col-xl-6 col-md-6  text-center">
+            <h4 class="workeHeader mt-5 text-center ">
               نضيف بهاراتنا الخاصة ...
             </h4>
             <p class="textHeader mt-3">
@@ -340,10 +348,12 @@
           </div>
         </div>
         <div class="row g-0">
-          <div class="col-md-6  order-sm-2">
-            <img src="../images/05.png" alt="KYF3" class=" mt-2" id="image4">
+          <div class="col-xl-6 col-xl-6 col-md-6  order-sm-2">
+            <div class="pert">
+              <img src="../images/05.png" alt="KYF3" class=" mt-2" id="image4" width="59%">
+            </div>
           </div>
-          <div class="col-md-6  order-sm-1">
+          <div class="col-xl-6 col-md-6  order-sm-1">
             <h4 class="workeHeader mt-5">نقدمها لك لتتذوقها و تتأكد من جودتها ...</h4>
             <p class="textHeader mt-3">
               يتم تقديم عينة من الوجبة البرمجية الخاصة بك إليك عزيزنا العميل لتتأكد من جودة الوجبة ومذاقها اللذيذ
@@ -360,10 +370,9 @@
       <div class="col-md-12">
         <h1 class=" who">شاهد إبداعاتنا ! </h1>
       </div>
-      <!--cardsssssssssssssssssssssssssssssssss-->
       <div class="col-md-12">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo1.png" alt="Card image">
@@ -375,7 +384,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo.png" alt="Card image">
@@ -387,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo3.png" alt="Card image">
@@ -399,7 +408,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo4.png" alt="Card image">
@@ -411,7 +420,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo5.png" alt="Card image">
@@ -423,7 +432,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo6.png" alt="Card image">
@@ -435,7 +444,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo7.png" alt="Card image">
@@ -447,7 +456,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-lg-4 col-md-4">
             <div class="container mt-3">
               <div class="card cardShow">
                 <img class="card-img-top rounded-circle cardShowImg" src="../images/lo8.png" alt="Card image">
@@ -468,7 +477,6 @@
       </div>
     </div>
   </section>
-  <!--rewiiiiii-->
   <section class="container-fluid mt-5 review">
     <div class="col-12 reviews mt-5 center">
       <div id="userReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -494,7 +502,6 @@
               تعامل راقي
               وذوق . ما قصرتوا أبدا ، الله يعطيكم العافية . </p>
           </div>
-          <!-- يمكنك إضافة المزيد من العناصر هنا -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#userReviewsCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -507,13 +514,11 @@
       </div>
     </div>
   </section>
-  <!--السبشششششل-->
   <div class="container-fluid mt-5" style="overflow-x: hidden;">
     <div class="row text-center align-items-center">
       <div class="col-md-12">
         <h1 class=" who">عـمـلاؤنـا المُـمَـيّـزون </h1>
       </div>
-      <!--cardsssssssssssssssssssssssssssssssss-->
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-4">
@@ -555,7 +560,7 @@
         </div>
       </div>
     </div>
-    <section class="container-fluid mt-5 counter " >
+    <section class="container-fluid mt-5 counter ">
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <img src="../images/e1.png" alt="" srcset="">
@@ -574,114 +579,114 @@
         </div>
       </div>
     </section>
-  <section class="container-fluid mt-5 " style="overflow-x: hidden;">
-    <div class="row">
-      <div class="col-12">
-        <h1 class=" who text-center"> الـمُـدوَّنـة </h1>
-      </div>
-    </div>
-    <section class="container allarticals">
-      <div id="articleCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container mt-4">
-                  <div class="card articalCard">
-                    <div class="card-body">
-                      <h6 class="card-title mt-5">
-                        هل تعرف ما هو جهاز التشفير انيجما ؟
-                      </h6>
-                      <button class="readMore btn  btn-light mt-5 text-center">اِقرأ المزيد</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="container-fluid mt-5 articles" style="overflow-x: hidden;">
+      <div class="row">
+        <div class="col-12">
+          <h1 class=" who text-center"> الـمُـدوَّنـة </h1>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
-          <i class="fa-solid fa-chevron-left carousel-control-prev-icon"  aria-hidden="true"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
-          <i class="fa-solid fa-angle-right carousel-control-next-icon" aria-hidden="true"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      <section class="container allarticals">
+        <div id="articleCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light  mt-5">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="container mt-4">
+                    <div class="card articalCard">
+                      <div class="card-body">
+                        <h6 class="card-title mt-5">
+                          هل تعرف ما هو جهاز التشفير انيجما ؟
+                        </h6>
+                        <button class="readMore btn  btn-light mt-5 text-center">اِقرأ المزيد</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+            <i class="fa-solid fa-chevron-left carousel-control-prev-icon" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+            <i class="fa-solid fa-angle-right carousel-control-next-icon" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </section>
-  </section>
-  <footer class="mt-5" style="overflow-x: hidden;">
-    <div class="row">
-      <div class="col-12">
-        <p>جـمـيـع الـحـقــوق مـحـفـوظـة لـــ DOZO-APPS</p>
+    <footer class="mt-5" style="overflow-x: hidden;">
+      <div class="row">
+        <div class="col-12">
+          <p>جـمـيـع الـحـقــوق مـحـفـوظـة لـــ DOZO-APPS</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="../scripts/main.js"></script>
 

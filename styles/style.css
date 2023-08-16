@@ -20,12 +20,14 @@
   font-family: myFontPlain, sans-serif;
 }
 
-.custom-cursor {
-  cursor: pointer !important;
-}
-
 .container-fluid {
   padding: 0;
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
 }
 
 .header {
@@ -34,6 +36,8 @@
   background-size: cover;
   background-image: url("../images/eBG.png");
   position: relative;
+  font-family: myFontLight;
+  font-size: 17px;
 }
 
 .header:before {
@@ -92,20 +96,33 @@
 
 .navbar-nav.active li.nav-item {
   right: 0;
+  margin: 0 15px;
 }
 
 .nav-link:hover {
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.navbar-toggler{
+  border: 0;
+}
+.navbar-toggler i{
+  color: #fff !important;
+  font-size: 28px;
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
 
 .who {
   color: #18427c;
   font-weight: 700;
 }
+.container2{
+  width: 60%;
+  margin: 0 auto;
+}
 
 .whoImg {
-  font-family: myF;
   color: #868686;
   font-size: 25px;
   text-align: center;
@@ -182,7 +199,7 @@
   overflow: hidden;
   width: 275px;
   height: 275px;
-  margin: 40px;
+  margin: 40px 0;
   padding: 20px 15px;
   border-radius: 15px;
   background-color: #fff;
@@ -218,9 +235,19 @@
   background-color: #3898ec;
   border-style: none;
 }
-
+.mt-2 img{
+  width: 50%;
+}
+.per{
+  width: 100%;
+}
+.per img{
+  width: 100%;
+}
+.pert img{
+  width: 50%;
+}
 .review {
-  height: 80vh;
   min-height: 400px;
   background-size: cover;
   background-image: url("../images/b-bg2.png");
@@ -229,7 +256,7 @@
 }
 
 .center {
-  padding: 70px 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -269,11 +296,14 @@
   height: 40px;
   overflow: hidden;
 }
-
+.order{
+  background-color: #3898ec;;
+}
 .imgService {
   width: 80%;
   height: 30%;
 }
+
 
 .reviewCon {
   display: block;
@@ -358,7 +388,8 @@ footer {
 .readMore {
   text-align: center;
   display: block;
-  width: 200px;
+  /* width: 200px; */
+  width: 60%;
   height: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -375,7 +406,7 @@ footer {
 }
 
 .workeHeader {
-  width: 460px;
+  /* width: 460px; */
   font-family: myFontPlain;
   font-size: 25px;
   line-height: 29px;
@@ -385,7 +416,7 @@ footer {
 }
 
 .textHeader {
-  width: 450px;
+  /* width: 450px; */
   font-family: myFontPlain;
   font-size: 16px;
   line-height: 30px;
@@ -393,30 +424,26 @@ footer {
 
 }
 
-.imgworlk {
-  /* margin-right: 86px;
-  margin-left: -7rem; */
-
-
-}
-.HowWoke{
-  width: 50%;
-}
-
-/*media Query*/
 @media only screen and (max-width:600px) {
-  /* body{
-    overflow-x: hidden;
-  } */
-  .HowWoke{
+
+
+  .HowWoke {
     width: 100%;
   }
+
   .header {
     background-position: 20% 33%;
   }
+  .articles{
+    display: none;
+  }
 
 }
+
 @media (max-width: 768px) {
+  .articles{
+    display: none;
+  }
   .header {
     height: 150vh;
   }
