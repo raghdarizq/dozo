@@ -18,7 +18,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: myFontPlain, sans-serif;
-  /* cursor: pointer !important; */
 }
 
 .custom-cursor {
@@ -66,17 +65,18 @@
 
 }
 
-.nav-item {
-  cursor: pointer !important;
-}
-
-.nav-item:hover {
-  cursor: pointer;
-}
-
 .buttons button {
   padding: 10px;
   width: 12rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.buttons button:active {
+  transform: scale(1) translateY(0) translateY(5px);
 }
 
 .buttons button a {
@@ -95,7 +95,7 @@
 }
 
 .nav-link:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -105,7 +105,7 @@
 }
 
 .whoImg {
-  font-family: 'Bahij thesansarabic plain', sans-serif;
+  font-family: myF;
   color: #868686;
   font-size: 25px;
   text-align: center;
@@ -165,11 +165,6 @@
   font-size: 10px;
 }
 
-.imgworlk {
-  width: 18rem;
-  margin-top: -1rem;
-  margin-left: -7rem;
-}
 
 .imgworlk2 {
   width: 37rem;
@@ -283,31 +278,25 @@
 .reviewCon {
   display: block;
   overflow: hidden;
-  padding: 0 110px;
+  padding: 0 5vw;
+  /* استخدام وحدة vw للهوامش */
   color: #6f706f;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .counter {
-  background-image: url("../images/slider-BG.png");
+  width: 100%;
   background-size: cover;
+  background-image: url("../images/slider-BG.png");
   min-height: 300px;
   padding: 70px 0;
   text-align: center;
   background-attachment: fixed, scroll;
 }
 
-.counter::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-image: url("../images/effects.png"); */
-  opacity: 0.5;
-}
+
 
 .count {
   padding-bottom: 15px;
@@ -348,14 +337,85 @@ footer {
 
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: linear-gradient(55deg, #656bda 1%, #416399);
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  position: relative;
+  right: 7rem;
+}
+
+.carousel-control-next-icon {
+  position: relative;
+  left: 8rem;
+}
+
+.readMore {
+  text-align: center;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.readMore2 {
+  background-color: #18427c;
+  color: white;
+  margin-bottom: 5px;
+
+}
+
+.workeHeader {
+  width: 460px;
+  font-family: myFontPlain;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.textHeader {
+  width: 450px;
+  font-family: myFontPlain;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+
+}
+
+.imgworlk {
+  /* margin-right: 86px;
+  margin-left: -7rem; */
+
+
+}
+.HowWoke{
+  width: 50%;
+}
+
 /*media Query*/
 @media only screen and (max-width:600px) {
+  /* body{
+    overflow-x: hidden;
+  } */
+  .HowWoke{
+    width: 100%;
+  }
   .header {
     background-position: 20% 33%;
   }
 
 }
-
 @media (max-width: 768px) {
   .header {
     height: 150vh;
@@ -366,9 +426,15 @@ footer {
     width: 100%;
   }
 
+  .welcomWorld {
+    width: 100%;
+  }
+
   nav .navbar-collapse {
-    /* background-image: linear-gradient(55deg, #7e81bc 1%, #416399); */
     min-width: 100%;
-    /* تنسيقات إضافية للنافبار عند شاشات متوسطة الحجم */
+  }
+
+  .reviewCon {
+    font-size: 1.9vw;
   }
 }

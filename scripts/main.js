@@ -17,18 +17,48 @@ window.addEventListener('scroll', function () {
     section.classList.add('active');
   }
 });
-const counts = [963243, 23, 31];
-const countElements = document.querySelectorAll('.counter h6 span');
+document.addEventListener('DOMContentLoaded', function() {
+  const counters = document.querySelectorAll('.count');
+  const speed = 100; 
 
-countElements.forEach((element, index) => {
-  let currentCount = 0;
-  const targetCount = counts[index];
-  const interval = setInterval(() => {
-    currentCount += Math.ceil(targetCount / 50);
-    element.textContent = currentCount.toLocaleString();
-    if (currentCount >= targetCount) {
-      clearInterval(interval);
-    }
-  }, 50);
+  function updateCounters() {
+    counters.forEach(counter => {
+      const targetValue = +counter.dataset.target;
+      let currentValue = +counter.textContent;
+
+      const increment = targetValue / (speed / 10);
+
+      if (currentValue < targetValue) {
+        counter.textContent = Math.ceil(currentValue + increment);
+      }
+    });
+  }
+
+  setInterval(updateCounters, speed);
 });
 
+window.addEventListener("scroll", function() {
+  // حركة الصور الأولى من الأعلى
+  var image1 = document.getElementById("image1");
+  image1.style.marginTop = "-100%";
+  image1.style.transition = "margin-top 1s";
+  setTimeout(function() {
+    image1.style.marginTop = "0";
+  }, 100);
+
+  // حركة الصور الثانية من الأسفل
+  var image2 = document.getElementById("image2");
+  image2.style.marginTop = "100%";
+  image2.style.transition = "margin-top 1s";
+  setTimeout(function() {
+    image2.style.marginTop = "0";
+  }, 100);
+
+  // حركة الصورة الرابعة من الأعلى
+  var image4 = document.getElementById("image4");
+  image4.style.marginTop = "-100%";
+  image4.style.transition = "margin-top 1s";
+  setTimeout(function() {
+    image4.style.marginTop = "0";
+  }, 100);
+});
