@@ -1,16 +1,16 @@
 @font-face {
   font-family: myFonBold;
-  src: url('../fonts/Bahij_TheSansArabic-Bold.ttf');
+  src: url("../fonts/Bahij_TheSansArabic-Bold.ttf");
 }
 
 @font-face {
   font-family: myFontLight;
-  src: url('../fonts/Bahij_TheSansArabic-SemiLight.ttf');
+  src: url("../fonts/Bahij_TheSansArabic-SemiLight.ttf");
 }
 
 @font-face {
   font-family: myFontPlain;
-  src: url('../fonts/Bahij_TheSansArabic-Plain.ttf');
+  src: url("../fonts/Bahij_TheSansArabic-Plain.ttf");
 }
 
 * {
@@ -20,21 +20,28 @@
   font-family: myFontPlain, sans-serif;
 }
 
+.font {
+  font-family: myFontPlain, sans-serif !important;
+
+}
+
 .container-fluid {
   padding: 0;
 }
-html{
+
+html {
   overflow-x: hidden;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
 .header {
-  height: 90vh;
   min-height: 400px;
   background-size: cover;
   background-image: url("../images/eBG.png");
+  filter: contrast(120%);
   position: relative;
   font-family: myFontLight;
   font-size: 17px;
@@ -48,12 +55,26 @@ body{
   width: 100%;
   height: 100%;
   background-image: url("../images/effects.png");
-  opacity: 0.5;
+  background-repeat: repeat;
+  filter: grayscale(70%);
+  filter: contrast(200%) brightness(150%);
+  opacity: 0.6;
 }
+
 
 .header:hover:before {
   opacity: 0.8;
   transform: translate(-50%, -50%) scale(1.1) rotate(15deg);
+}
+
+.hero-secrion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.child {
+  width: 40%;
 }
 
 .header-img {
@@ -66,7 +87,6 @@ body{
 
 .header:hover .header-img {
   transform: translate(-50%, -55%);
-
 }
 
 .buttons button {
@@ -102,36 +122,77 @@ body{
 .nav-link:hover {
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   border: 0;
 }
-.navbar-toggler i{
+
+.navbar-toggler i {
   color: #fff !important;
   font-size: 28px;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
   box-shadow: none !important;
+}
+
+.whos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+.question .content {
+  display: flex;
+  align-items: center;
+}
+
+.question img {
+  width: 20%;
+  max-width: 100px;
+  margin-right: 1rem;
+}
+
+.question p {
+  width: 70%;
+  color: #868686;
+  font-size: 1.3rem;
+  font-family: myFontPlain;
 }
 
 .who {
   color: #18427c;
   font-weight: 700;
 }
-.container2{
+
+.container2 {
   width: 60%;
   margin: 0 auto;
-}
-
-.whoImg {
-  color: #868686;
-  font-size: 25px;
-  text-align: center;
 }
 
 .section-transition {
   opacity: 0;
   transform: translateX(50px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
 }
 
 .section-transition.active {
@@ -153,9 +214,9 @@ body{
 }
 
 .carousel-item img {
-  height: 100vh;
   object-fit: cover;
   width: 100%;
+  overflow: hidden;
 }
 
 .line {
@@ -174,14 +235,13 @@ body{
 }
 
 .card-title {
-  font-family: 'Bahij thesansarabic plain', sans-serif;
+  font-family: "Bahij thesansarabic plain", sans-serif;
   font-size: 16px;
 }
 
 .card-text {
   font-size: 10px;
 }
-
 
 .imgworlk2 {
   width: 37rem;
@@ -235,18 +295,23 @@ body{
   background-color: #3898ec;
   border-style: none;
 }
-.mt-2 img{
+
+.mt-2 img {
   width: 50%;
 }
-.per{
+
+.per {
   width: 100%;
 }
-.per img{
+
+.per img {
   width: 100%;
 }
-.pert img{
+
+.pert img {
   width: 50%;
 }
+
 .review {
   min-height: 400px;
   background-size: cover;
@@ -261,12 +326,10 @@ body{
 }
 
 .reviews {
-  height: 60vh;
   width: 60%;
   background-color: #fff;
   border-radius: 20px;
   margin: 0 auto;
-
 }
 
 .carousel-items img {
@@ -277,7 +340,6 @@ body{
 }
 
 .cardService {
-  width: 170px;
   height: 314px;
   margin: 0 auto;
   border: 2px solid #18427b;
@@ -287,8 +349,11 @@ body{
 }
 
 .cardService:hover {
-  transform: translateX(10px);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transform: scale(1.05);
+  box-shadow:
+    rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .card-service-text {
@@ -296,20 +361,20 @@ body{
   height: 40px;
   overflow: hidden;
 }
-.order{
-  background-color: #3898ec;;
+
+.order {
+  background-color: #3898ec !important;
 }
+
 .imgService {
   width: 80%;
   height: 30%;
 }
 
-
 .reviewCon {
   display: block;
   overflow: hidden;
   padding: 0 5vw;
-  /* استخدام وحدة vw للهوامش */
   color: #6f706f;
   font-size: 18px;
   font-weight: 700;
@@ -325,8 +390,6 @@ body{
   text-align: center;
   background-attachment: fixed, scroll;
 }
-
-
 
 .count {
   padding-bottom: 15px;
@@ -364,7 +427,6 @@ footer {
   text-align: center;
   color: white;
   font-size: 30px;
-
 }
 
 .carousel-control-prev-icon,
@@ -377,18 +439,17 @@ footer {
 
 .carousel-control-prev-icon {
   position: relative;
-  right: 7rem;
+  right: 9rem;
 }
 
 .carousel-control-next-icon {
   position: relative;
-  left: 8rem;
+  left: 9rem;
 }
 
 .readMore {
   text-align: center;
   display: block;
-  /* width: 200px; */
   width: 60%;
   height: 50px;
   margin-right: auto;
@@ -402,11 +463,13 @@ footer {
   background-color: #18427c;
   color: white;
   margin-bottom: 5px;
+}
 
+.work {
+  display: flex;
 }
 
 .workeHeader {
-  /* width: 460px; */
   font-family: myFontPlain;
   font-size: 25px;
   line-height: 29px;
@@ -416,16 +479,42 @@ footer {
 }
 
 .textHeader {
-  /* width: 450px; */
   font-family: myFontPlain;
   font-size: 16px;
   line-height: 30px;
   text-align: right;
-
 }
 
-@media only screen and (max-width:600px) {
 
+.bgggggg {
+  background-image: url('../images/05-bg.png');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: myFontLight;
+  padding-top: 3rem;
+  width: 107rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero-secrion {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .child {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .spicon {
+    position: absolute;
+  }
 
   .HowWoke {
     width: 100%;
@@ -434,18 +523,25 @@ footer {
   .header {
     background-position: 20% 33%;
   }
-  .articles{
+
+  .articles {
     display: none;
   }
 
+  .question .content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  .articles{
+  .articles {
     display: none;
   }
-  .header {
-    height: 150vh;
+
+  .bgggggg {
+
+    width: 32rem;
+    padding-top: 8rem;
   }
 
   .welcom {
